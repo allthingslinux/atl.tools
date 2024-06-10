@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* set font family */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .align.flex {
+         flex-direction: column;
+     }
+    .align.flex > div {
+         margin-right: 0;
+         margin-bottom: 20px; /* Adjust spacing between blocks on mobile */
+     }
+     nav ul {
+         padding: 0;
+         flex-direction: column;
+         text-align: center;
+     }
+     nav ul li a {
+         padding: 10px 20px; /* Adjust button sizes for touch */
+     }
+ }

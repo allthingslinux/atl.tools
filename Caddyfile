@@ -1,0 +1,17 @@
+{
+    http_port 8000
+    auto_https off
+}
+
+localhost:8000 {
+    encode gzip
+
+    handle {
+        root * src/
+        file_server
+    }
+
+    handle /assets/* {
+        file_server
+    }
+}
