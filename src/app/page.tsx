@@ -17,6 +17,8 @@ import {
 } from 'react-icons/fi';
 import { FaDiscord } from 'react-icons/fa';
 
+import { ThemeToggle } from '@/components/theme-toggle';
+
 export default function Home() {
   return (
     <div className='min-h-screen bg-[#1a1a2e] text-white'>
@@ -34,6 +36,7 @@ export default function Home() {
             <FiUser className='mr-1' />
             Register
           </Button>
+          <ThemeToggle />
         </div>
       </header>
 
