@@ -20,10 +20,11 @@ import { FaDiscord } from 'react-icons/fa';
 export default function Home() {
   return (
     <div className='min-h-screen bg-[#1a1a2e] text-white'>
-      <header className='flex items-center justify-between p-4 bg-[#181825]'>
+      <header className='flex items-center justify-between bg-[#181825] p-4'>
         <div className='flex items-center space-x-2'>
           <h1 className='text-xl font-bold'>atl.tools</h1>
         </div>
+
         <div className='flex items-center space-x-4'>
           <Button variant='ghost'>
             <FiLock className='mr-1' />
@@ -35,16 +36,20 @@ export default function Home() {
           </Button>
         </div>
       </header>
-      <main className='p-8 space-y-12'>
+
+      <main className='space-y-12 p-8'>
         <section className='text-center'>
           <h2 className='text-4xl font-bold'>welcome to atl.tools</h2>
+
           <p className='text-lg text-muted-foreground'>
             self hosted applications for nerds, by nerds
           </p>
+
           <div className='flex justify-center'>
-            <div className='w-full h-1 bg-[#313244] m-6'></div>
+            <div className='m-6 h-1 w-full bg-[#313244]'></div>
           </div>
         </section>
+
         <section>
           <h3 className='text-2xl font-bold'>what we host</h3>
 
@@ -53,7 +58,7 @@ export default function Home() {
             projects
           </p>
 
-          <div className='grid gap-4 mt-4 md:grid-cols-2 lg:grid-cols-4'>
+          <div className='mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-4'>
             <Card className='flex flex-col bg-[#F38BA8]'>
               <CardHeader className='flex-grow'>
                 <CardTitle>.gg/linux</CardTitle>
@@ -101,9 +106,9 @@ export default function Home() {
 
             <Card className='flex flex-col bg-[#F9E2AF]'>
               <CardHeader className='flex-grow'>
-                <CardTitle>???</CardTitle>
+                <CardTitle>allthingslinux.com</CardTitle>
                 <CardDescription className='text-primary'>
-                  and more to come.. we are making new projects extremely fast
+                  our official site, coming soon.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -112,7 +117,8 @@ export default function Home() {
 
         <section>
           <h3 className='text-2xl font-bold'>self hosted services</h3>
-          <div className='grid gap-4 mt-4 md:grid-cols-2 lg:grid-cols-4'>
+
+          <div className='mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-4'>
             <Card className='flex flex-col bg-[#BB9AEB]'>
               <CardHeader className='flex-grow'>
                 <CardTitle>privatebin</CardTitle>
