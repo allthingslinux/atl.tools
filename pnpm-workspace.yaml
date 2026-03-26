@@ -3,7 +3,7 @@ packages:
   - packages/*
 
 catalog:
-  next: 16.1.6
+  next: 16.1.7
   react: ^19.1.0
   react-dom: ^19.1.0
   typescript: ^5.8.3
